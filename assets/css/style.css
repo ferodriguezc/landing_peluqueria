@@ -1,15 +1,17 @@
 /* Reseteo de márgenes y tamaños */
-html, body {
+html,
+body {
     height: 100%;
     width: 100%;
     margin: 0;
+    
 }
 
 /* Tipografía */
 @font-face {
     font-family: 'brands';
     src: url('../fonts/fa-brands-400.woff') format('woff'),
-         url('../fonts/fa-brands-400.woff2') format('woff2');
+        url('../fonts/fa-brands-400.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
@@ -56,7 +58,9 @@ p {
 }
 
 /* Títulos */
-.titulo, .subtitulo, .subtitulo-about {
+.titulo,
+.subtitulo,
+.subtitulo-about {
     font-family: 'brands', sans-serif;
     text-transform: uppercase;
     text-align: center;
@@ -69,7 +73,8 @@ p {
     color: rgb(224, 195, 30);
 }
 
-.subtitulo, .subtitulo-about {
+.subtitulo,
+.subtitulo-about {
     font-weight: 700;
     font-size: 3vw;
     color: white;
@@ -82,8 +87,14 @@ p {
 
 /* Responsividad de los títulos */
 @media (max-width: 768px) {
-    .titulo { font-size: 12vw; }
-    .subtitulo, .subtitulo-about { font-size: 5vw; }
+    .titulo {
+        font-size: 12vw;
+    }
+
+    .subtitulo,
+    .subtitulo-about {
+        font-size: 5vw;
+    }
 }
 
 /* ::::::::::::: BOTONES ::::::::::::: */
@@ -122,30 +133,102 @@ p {
 
 /* Responsividad de los botones */
 @media (max-width: 768px) {
-    .btn-accion { font-size: 3vw; }
+    .btn-accion {
+        font-size: 3vw;
+    }
 }
 
 /* ::::::::::::: SECCIONES GENERALES ::::::::::::: */
-.about, .skill, .service, .project, .testimonial, .products, .contact, .footer {
+.about,
+.service,
+.project,
+.testimonial,
+.products,
+.contact {
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: rgb(24, 24, 24);
 }
 
-/* Fondo de las secciones */
-.about, .skill, .project, .products, .footer {
-    background-color: black;
-}
-
-.service, .testimonial, .contact {
-    background-color: white;
-}
 
 /* Ajuste de altura en móviles */
 @media (max-width: 768px) {
-    .about, .skill, .service, .project, .testimonial, .products, .contact, .footer {
+
+    .about,
+    .skill,
+    .service,
+    .project,
+    .testimonial,
+    .products,
+    .contact{
         min-height: 80vh;
         padding: 50px 20px;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* From Uiverse.io by alexruix */
+
+
+.card-details {
+    color: black;
+    height: 100%;
+    gap: .5em;
+    display: grid;
+    place-content: center;
+}
+
+.card-button {
+    transform: translate(-50%, 125%);
+    width: 60%;
+    border-radius: 1rem;
+    border: none;
+    background-color:#d4af37;
+    color: #000000;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.3s ease-out;
+}
+
+.text-body {
+    color: rgb(0, 0, 0);
+}
+
+/*Text*/
+.text-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #000000;
+}
+
+/*Hover*/
+.card:hover {
+    border-color: #d4af37;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
+.card:hover .card-button {
+    transform: translate(-50%, 50%);
+    opacity: 1;
+}
+
+

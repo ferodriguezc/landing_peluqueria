@@ -31,9 +31,32 @@
 
 
         <!--::::: HEADER AREA START :::::::-->
-        <div class="header">
-
-        </div>
+       <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+           <div class="container-fluid">
+               <a class="navbar-brand" href="#">PageTitle</a>
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                   data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                   aria-label="Toggle navigation">
+                   <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                   <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                       <li class="nav-item">
+                           <a class="nav-link active" aria-current="page" href="#">Home</a>
+                       </li>
+                       <li class="nav-item">
+                           <a class="nav-link" href="#">Link 1</a>
+                       </li>
+                       <li class="nav-item">
+                           <a class="nav-link" href="#">Link 2</a>
+                       </li>
+                       <li class="nav-item">
+                           <a class="nav-link" href="#">Link 3</a>
+                       </li>
+                   </ul>
+               </div>
+           </div>
+       </nav>
         <!--::::: HEADER AREA END :::::::-->
 
         <!--:::::WELCOME ATRA START :::::::-->
@@ -55,57 +78,80 @@
         <!--:::::WELCOME AREA END :::::::-->
 
 
- <!--:::::ABOUT AREA START :::::::-->
-<div class="about row d-flex flex-column flex-md-row align-items-center justify-content-evenly gap-4">
+        <!--:::::ABOUT AREA START :::::::-->
+        <div class="about d-flex flex-column flex-md-row align-items-center justify-content-evenly gap-4">
 
-    <!-- Sección de texto -->
-    <div class="col-11 col-md-5 d-flex flex-column">
-        <h2 class="subtitulo-about text-center text-md-start">Sobre nosotros</h2>
-        <p class="text-justify">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ex ea commodo consequat.
-        </p>
-    </div>
+            <!-- Sección de texto -->
+            <div class="col-11 col-md-5 d-flex flex-column">
+                <h2 class="subtitulo-about text-center text-md-start">Sobre nosotros</h2>
+                <p class="text-justify">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
 
-    <!-- Sección de expertos -->
-    <div class="col-11 col-md-5 d-flex flex-column justify-content-center">
-        <div class="row text-center">
-            <div class="col-4 col-sm-4">
-                <p class="fw-bold">Expertos</p>
-                <p>Lorem ipsum dolor sit amet</p>
+            <!-- Sección de expertos -->
+            <div class="col-11 col-md-5 d-flex flex-column justify-content-around h-100 ">
+
+                <div class="row text-center">
+                    <div class="col-4 col-sm-4 ">
+                        <p class="fw-bold text-center">Expertos</p>
+                        <p class="text-center">Lorem ipsum dolor sit amet</p>
+                    </div>
+                    <div class="col-4 col-sm-4">
+                        <p class="fw-bold text-center">Profesionales</p>
+                        <p class="text-center"> Lorem ipsum dolor sit amet</p>
+                    </div>
+                    <div class="col-4 col-sm-4">
+                        <p class="fw-bold text-center">Calidad</p>
+                        <p class="text-center">Lorem ipsum dolor sit amet</p>
+                    </div>
+                </div>
             </div>
-            <div class="col-4 col-sm-4">
-                <p class="fw-bold">Profesionales</p>
-                <p>Lorem ipsum dolor sit amet</p>
-            </div>
-            <div class="col-4 col-sm-4">
-                <p class="fw-bold">Calidad</p>
-                <p>Lorem ipsum dolor sit amet</p>
-            </div>
+
         </div>
-    </div>
+        <!--:::::ABOUT AREA END :::::::-->
 
-</div>
-<!--:::::ABOUT AREA END :::::::-->
+        <style>
+            /* Justificar texto (para Bootstrap 5) */
+            .text-justify {
+                text-align: justify;
+            }
+        </style>
 
-<style>
-    /* Justificar texto (para Bootstrap 5) */
-    .text-justify {
-        text-align: justify;
-    }
-</style>
-
-
-        <!--:::::SKILL AREA START :::::::-->
-        <div class="skill">
-            <h2>skill</h2>
-        </div>
-        <!--:::::SKILL AREA END :::::::-->
 
         <!--:::::SERVICE AREA START :::::::-->
-        <div class="service">
-            <h2>service</h2>
+        <div class="service  d-flex flex-column justify-content-evenly  vh-100">
+
+            <h2 class="subtitulo-about  text-center text-md-start">Conoce nuestros servicios</h2>
+
+            <div class="row d-flex flex-row justify-content-between text-center">
+                <div class="card col-12 mx-2">
+                    <div class="card-details">
+                      <p class="text-title">Corte de cabello</p>
+                      <p class="text-body">Lorem ipsum dolor sit amet</p>
+                    </div>
+                    <button class="card-button">Mas información</button>
+                  </div>
+                  <div class="card col-12 mx-2">
+                    <div class="card-details">
+                      <p class="text-title">Corte de cabello</p>
+                      <p class="text-body">Lorem ipsum dolor sit amet</p>
+                    </div>
+                    <button class="card-button">Mas información</button>
+                  </div>
+                  <div class="card col-12 mx-2">
+                    <div class="card-details">
+                      <p class="text-title">Corte de cabello</p>
+                      <p class="text-body">Lorem ipsum dolor sit amet</p>
+                    </div>
+                    <button class="card-button">Mas información</button>
+                  </div>
+            </div>
+
+          
+
         </div>
         <!--:::::SERVICE AREA END :::::::-->
 
@@ -135,7 +181,7 @@
 
 
         <!--:::::FOOTER AREA START :::::::-->
-        <div class="footer">
+        <div class="footer position-absolute position-sticky h-25">
             <h2>footer</h2>
         </div>
         <!--:::::FOOTER AREA END :::::::-->
