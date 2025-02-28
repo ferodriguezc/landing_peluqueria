@@ -31,41 +31,43 @@
 
 
         <!--::::: HEADER AREA START :::::::-->
-       <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
-           <div class="container-fluid">
-               <a class="navbar-brand" href="#">PageTitle</a>
-               <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                   data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                   aria-label="Toggle navigation">
-                   <span class="navbar-toggler-icon"></span>
-               </button>
-               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                   <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                       <li class="nav-item">
-                           <a class="nav-link active" aria-current="page" href="#">Home</a>
-                       </li>
-                       <li class="nav-item">
-                           <a class="nav-link" href="#">Link 1</a>
-                       </li>
-                       <li class="nav-item">
-                           <a class="nav-link" href="#">Link 2</a>
-                       </li>
-                       <li class="nav-item">
-                           <a class="nav-link" href="#">Link 3</a>
-                       </li>
-                   </ul>
-               </div>
-           </div>
-       </nav>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Monarca barberia
+
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">Sobre nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#service">serviciós</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#project">proyectos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
         <!--::::: HEADER AREA END :::::::-->
 
+
+
         <!--:::::WELCOME ATRA START :::::::-->
-        <div class="welcome">
+        <div class="welcome .container-fluid ">
             <div class="overlay">
 
                 <div class="cont-header">
-                    <h1 class="titulo">Monarca</h1>
-                    <p class="subtitulo">Estilo real para hombres modernos</p>
+                    <h1 class="titulo">Monarca Barberia</h1>
+                    <p class="subtitulo px-5 text-center">Estilo real para hombres modernos</p>
                     <div class="cont-btn">
                         <a href="#" class="btn-accion">Transforma tu Estilo</a>
                     </div>
@@ -78,113 +80,140 @@
         <!--:::::WELCOME AREA END :::::::-->
 
 
-        <!--:::::ABOUT AREA START :::::::-->
-        <div class="about d-flex flex-column flex-md-row align-items-center justify-content-evenly gap-4">
+        <!-- ABOUT AREA START -->
+        <div class="about container-fluid d-flex flex-column  gap-5 py-100" id="about">
 
-            <!-- Sección de texto -->
-            <div class="col-11 col-md-5 d-flex flex-column">
-                <h2 class="subtitulo-about text-center text-md-start">Sobre nosotros</h2>
-                <p class="text-justify">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                    laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-            </div>
 
-            <!-- Sección de expertos -->
-            <div class="col-11 col-md-5 d-flex flex-column justify-content-around h-100 ">
+            <div class="row d-flex align-items-center justify-content-evenly align-items-lg-center gap-5">
+                <!-- Sección de texto -->
 
-                <div class="row text-center">
-                    <div class="col-4 col-sm-4 ">
-                        <p class="fw-bold text-center">Expertos</p>
-                        <p class="text-center">Lorem ipsum dolor sit amet</p>
-                    </div>
-                    <div class="col-4 col-sm-4">
-                        <p class="fw-bold text-center">Profesionales</p>
-                        <p class="text-center"> Lorem ipsum dolor sit amet</p>
-                    </div>
-                    <div class="col-4 col-sm-4">
-                        <p class="fw-bold text-center">Calidad</p>
-                        <p class="text-center">Lorem ipsum dolor sit amet</p>
+                <div class="col-10 col-lg-4">
+                    <h2 class="subtitulo text-start text-md-start">Sobre nosotros</h2>
+                    <p class="text-justify">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+
+                <!-- Sección de expertos -->
+                <div class="col-10 col-lg-6 text-center">
+                    <div class="row text-center d-flex justify-content-between ">
+                        <div class="col-10 col-lg-3 ">
+                            <p class="fw-bold">Expertos</p>
+                            <p>Lorem ipsum dolor sit amet</p>
+                        </div>
+                        <div class="col-10  col-lg-3">
+                            <p class="fw-bold">Profesionales</p>
+                            <p>Lorem ipsum dolor sit amet</p>
+                        </div>
+                        <div class="col-10  col-lg-3">
+                            <p class="fw-bold">Calidad</p>
+                            <p>Lorem ipsum dolor sit amet</p>
+                        </div>
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="subtitulo-b text-center ">nuestro equipo</h2>
+                    <div class="row d-flex align-items-center justify-content-center align-items-lg-center gap-5 h-100">
+                        <!-- Sección de texto -->
+        
+                        <div class="col-12 col-md-5">
+                            <img src="./assets/img/barbero_2.jpg" alt="" class="img-fluid">
+                        </div>
 
+                        <div class="col-12 col-md-5">
+                            <img src="./assets/img/barbero_1.jpg" alt="" class="img-fluid">
+                        </div>
+             
+                    </div>
+                </div>
+            </div>
         </div>
-        <!--:::::ABOUT AREA END :::::::-->
 
-        <style>
-            /* Justificar texto (para Bootstrap 5) */
-            .text-justify {
-                text-align: justify;
-            }
-        </style>
+
+        <!-- ABOUT AREA END -->
 
 
         <!--:::::SERVICE AREA START :::::::-->
-        <div class="service  d-flex flex-column justify-content-evenly  vh-100">
+        <!-- <div class="service  container-fluid d-flex flex-column justify-content-evenly  vh-100" id="service"> -->
 
-            <h2 class="subtitulo-about  text-center text-md-start">Conoce nuestros servicios</h2>
-
+            <!-- <h2 class="subtitulo-about  text-center text-md-start">Conoce nuestros servicios</h2> -->
+            <!-- 
             <div class="row d-flex flex-row justify-content-between text-center">
                 <div class="card col-12 mx-2">
                     <div class="card-details">
-                      <p class="text-title">Corte de cabello</p>
-                      <p class="text-body">Lorem ipsum dolor sit amet</p>
+                        <p class="text-title">Corte de cabello</p>
+                        <p class="text-body">Lorem ipsum dolor sit amet</p>
                     </div>
                     <button class="card-button">Mas información</button>
-                  </div>
-                  <div class="card col-12 mx-2">
+                </div>
+                <div class="card col-12 mx-2">
                     <div class="card-details">
-                      <p class="text-title">Corte de cabello</p>
-                      <p class="text-body">Lorem ipsum dolor sit amet</p>
+                        <p class="text-title">Corte de cabello</p>
+                        <p class="text-body">Lorem ipsum dolor sit amet</p>
                     </div>
                     <button class="card-button">Mas información</button>
-                  </div>
-                  <div class="card col-12 mx-2">
+                </div>
+                <div class="card col-12 mx-2">
                     <div class="card-details">
-                      <p class="text-title">Corte de cabello</p>
-                      <p class="text-body">Lorem ipsum dolor sit amet</p>
+                        <p class="text-title">Corte de cabello</p>
+                        <p class="text-body">Lorem ipsum dolor sit amet</p>
                     </div>
                     <button class="card-button">Mas información</button>
-                  </div>
-            </div>
+                </div>
+            </div> -->
 
-          
+
 
         </div>
         <!--:::::SERVICE AREA END :::::::-->
 
         <!--:::::PROJECT AREA START :::::::-->
-        <div class="project">
+        <!-- <div class="project container-fluid" id="project">
             <h2>project</h2>
-        </div>
+        </div> -->
         <!--:::::PROJECT AREA END :::::::-->
 
         <!--:::::TESTIMONIALS AREA START :::::::-->
-        <div class="testimonial">
-            <h2>testimonial</h2>
-        </div>
-        <!--:::::TESTIMONIALS AREA END :::::::-->
+        <!-- <div class="testimonial .container-fluid d-flex flex-column justify-content-evenly  vh-100">
+            <h2 class="subtitulo-about  text-center text-md-start">testimonios</h2>
+            <div class="container">
+                <div c lass="row">
+                    <div class="col-6"></div>
+                    <div class="col-6">
 
-        <!--:::::PRODUCTS AREA START :::::::-->
-        <div class="products">
-            <h2>products</h2>
-        </div>
-        <!--:::::PRODUCTS AREA END :::::::-->
+                    </div>
+                </div>
+            </div>
+        </div> -->
 
-        <!--::::: CONTACT  START :::::::-->
-        <div class="contact">
-            <h2>contact</h2>
-        </div>
-        <!--:::::CONTACT AREA END :::::::-->
+    </div>
 
 
-        <!--:::::FOOTER AREA START :::::::-->
-        <div class="footer position-absolute position-sticky h-25">
-            <h2>footer</h2>
-        </div>
-        <!--:::::FOOTER AREA END :::::::-->
+
+    <!--:::::TESTIMONIALS AREA END :::::::-->
+
+    <!--:::::PRODUCTS AREA START :::::::-->
+    <!-- <div class="products container-fluid">
+        <h2>products</h2>
+    </div> -->
+    <!--:::::PRODUCTS AREA END :::::::-->
+
+    <!--::::: CONTACT  START :::::::-->
+    <!-- <div class="contact container-fluid">
+        <h2>contact</h2>
+    </div> -->
+    <!--:::::CONTACT AREA END :::::::-->
+
+
+    <!--:::::FOOTER AREA START :::::::-->
+    <div class="footer container-fluid position-absolute position-sticky ">
+        <h2>footer</h2>
+    </div>
+    <!--:::::FOOTER AREA END :::::::-->
 
     </div>
 
