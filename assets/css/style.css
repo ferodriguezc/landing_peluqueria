@@ -1,0 +1,244 @@
+html body {
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+}
+
+
+
+@font-face {
+    font-family: 'brands';
+    src: url('../fonts/fa-brands-400.woff') format('woff'),
+        url('../fonts/fa-brands-400.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+
+
+/*///////////////////////////////*/
+.welcome {
+    height: 150vh;
+    background-color: black;
+    background-image: url(../img/fondo_welcome.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.cont-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+    position: relative;
+
+}
+
+.titulo {
+    font-family: 'brands', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 6vw;
+    /* Tamaño relativo al ancho de la pantalla */
+    color: rgb(224, 195, 30);
+    text-align: center;
+    /* Centrar el texto */
+    margin: 0;
+}
+
+
+@media (max-width: 768px) {
+    .titulo {
+        font-size: 12vw;
+        /* Aumentar el tamaño en móviles */
+    }
+}
+
+@media (max-width: 480px) {
+    .titulo {
+        font-size: 10vw;
+        /* Aumentar aún más en pantallas muy pequeñas */
+    }
+}
+
+
+.subtitulo {
+    font-family: 'brands', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 3vw;
+    /* Tamaño relativo al ancho de la pantalla */
+    color: rgb(255, 255, 255);
+    text-align: center;
+    /* Centrar el texto */
+    margin: 0%;
+}
+
+
+@media (max-width: 768px) {
+    .subtitulo {
+        font-size: 5vw;
+        /* Aumentar el tamaño en móviles */
+    }
+}
+
+@media (max-width: 480px) {
+    .subtitulo {
+        font-size: 5vw;
+        /* Aumentar aún más en pantallas muy pequeñas */
+    }
+}
+
+.cont-btn {
+margin-top: 5%;
+}
+
+.btn-accion {
+    display: inline-block;
+    padding: 15px 30px;
+    font-family: 'brands', sans-serif;
+    font-size: 1.5vw;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #d4af37;
+    /* Dorado */
+    border: 2px solid #d4af37;
+    border-radius: 50px;
+    /* Bordes redondeados */
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    /* Sombra */
+}
+
+/* Efecto hover */
+.btn-accion:hover {
+    color: #090909;
+    border-color: #d4af37;
+    transform: translateY(-3px);
+    /* Efecto de levantar */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+    /* Sombra más pronunciada */
+}
+
+/* Efecto active (al hacer clic) */
+.btn-accion:active {
+    transform: translateY(0);
+    /* Vuelve a su posición original */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    /* Sombra normal */
+}
+
+
+
+
+@media (max-width: 768px) {
+    .btn-accion {
+        font-size: 3vw;
+        /* Aumentar el tamaño en móviles */
+    }
+}
+
+@media (max-width: 480px) {
+    .btn-accion {
+        font-size: 3vw;
+        /* Aumentar aún más en pantallas muy pequeñas */
+    }
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fondo negro semitransparente */
+    z-index: 90;
+}
+
+.con-header {
+    position: relative;
+    z-index: 0;
+}
+
+/*///////////////////////////////*/
+
+
+.about {
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+
+}
+
+
+
+
+.skill {
+    height: 100vh;
+    background-color: black;
+
+}
+
+
+
+
+.service {
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+
+}
+
+
+
+.project {
+    height: 100vh;
+    background-color: black;
+
+}
+
+
+
+
+.testimonial {
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+.products {
+    height: 100vh;
+    background-color: black;
+
+}
+
+
+
+
+.contact {
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+
+}
+
+
+
+.footer {
+    height: 100vh;
+    background-color: rgb(4, 4, 4);
+
+}
