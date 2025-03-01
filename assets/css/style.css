@@ -1,32 +1,48 @@
+/* Variables CSS */
+:root {
+    --color-primary: #d4af37; /* Color dorado */
+    --color-secondary: #ffffff; /* Color blanco */
+    --color-background: #181818; /* Color de fondo oscuro */
+    --color-overlay: rgba(28, 27, 27, 0.628); /* Color de superposición */
+    --font-primary: 'brands', sans-serif; /* Fuente principal */
+    --font-size-base: 1.8vw; /* Tamaño base de fuente */
+    --font-size-mobile: 3.5vw; /* Tamaño de fuente para móviles */
+    --spacing-large: 5%; /* Espaciado grande */
+    --spacing-medium: 2%; /* Espaciado medio */
+    --transition-speed: 0.3s; /* Velocidad de transición */
+}
+
 /* Reseteo de márgenes y tamaños */
-html,
-body {
+html, body {
     height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
+    font-family: var(--font-primary);
+    background-color: var(--color-background);
+    color: var(--color-secondary);
 }
 
 /* Tipografía personalizada */
 @font-face {
     font-family: 'brands';
     src: url('../fonts/fa-brands-400.woff') format('woff'),
-        url('../fonts/fa-brands-400.woff2') format('woff2');
+         url('../fonts/fa-brands-400.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 
 /* Estilos generales */
 p {
-    font-size: 1.8vw;
-    color: #fff;
+    font-size: var(--font-size-base);
+    color: var(--color-secondary);
     text-align: justify;
     line-height: 1.6;
 }
 
 @media (max-width: 768px) {
     p {
-        font-size: 3.5vw;
+        font-size: var(--font-size-mobile);
     }
 }
 
@@ -37,7 +53,6 @@ p {
     position: relative;
 }
 
-/* Contenedor del contenido principal */
 .cont-header {
     display: flex;
     flex-direction: column;
@@ -48,76 +63,93 @@ p {
     position: relative;
 }
 
-/* Capa oscura sobre la imagen de fondo */
 .overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
-    background-color: rgba(28, 27, 27, 0.628);
+    background-color: var(--color-overlay);
     z-index: 90;
 }
 
 /* ::::::::::::: TIPOGRAFÍA ::::::::::::: */
-.titulo,
-.subtitulo,
-.subtitulo-about,
-.subtitulo-b {
-    font-family: 'brands', sans-serif;
+.titulo, .subtitulo, .subtitulo-about, .subtitulo-b {
+    font-family: var(--font-primary);
     text-transform: uppercase;
     margin: 0;
+    color: var(--color-primary);
+    position: relative;
+    display: inline-block; /* Para que la línea se ajuste al texto */
+    padding-bottom: 5px; /* Espacio para la línea */
 }
 
-.titulo{
-     color: #d4af37;
-     font-weight: 900;
-     font-size: 6vh;
+
+
+.subtitulo-about::after, 
+.subtitulo-b::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%; /* Línea del mismo ancho que el texto */
+    border-bottom: 5px solid white;
 }
 
-.subtitulo{
-    color: #d4af37;
+.titulo {
+    font-weight: 900;
+    font-size: 6vh;
+}
+
+.subtitulo {
     font-weight: 700;
     font-size: 4vh;
-    
 }
 
-.subtitulo-b{
-    color: #d4af37;
+.subtitulo-b {
     font-weight: 700;
-    font-size: 3vh;
-    
+    font-size: 3.5vh;
 }
 
-p{
+.subtitulo-about {
+    font-weight: 700;
+    font-size: 5vh;
+}
+
+
+
+
+.p-about {
     font-size: 4vh;
+}
+
+.p-about-b {
+    font-size: 3.5vh;
 }
 
 /* ::::::::::::: BOTONES ::::::::::::: */
 .cont-btn {
-    margin-top: 5%;
+    margin-top: var(--spacing-large);
 }
 
-/* Botón principal */
 .btn-accion {
     display: inline-block;
     padding: 15px 30px;
-    font-family: 'brands', sans-serif;
+    font-family: var(--font-primary);
     font-size: 1.5vw;
     font-weight: 600;
     text-transform: uppercase;
-    color: #fff;
-    background-color: #d4af37;
-    border: 2px solid #d4af37;
+    color: var(--color-secondary);
+    background-color: var(--color-primary);
+    border: 2px solid var(--color-primary);
     border-radius: 50px;
     text-decoration: none;
-    transition: all 0.3s ease;
+    transition: all var(--transition-speed) ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-/* Efectos hover y active */
 .btn-accion:hover {
-    color: #090909;
+    color: var(--color-background);
     transform: translateY(-3px);
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
 }
@@ -127,35 +159,23 @@ p{
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-/* Ajuste del botón en dispositivos móviles */
 @media (max-width: 768px) {
     .btn-accion {
-        font-size: 3vw;
+        font-size: var(--font-size-mobile);
     }
 }
 
 /* ::::::::::::: SECCIONES GENERALES ::::::::::::: */
-.about,
-.service,
-.project,
-.testimonial,
-.products,
-.contact {
+.about, .service, .project, .testimonial, .products, .contact {
     min-height: 100vh;
     display: flex;
     justify-content: center;
-    background-color: rgb(24, 24, 24);
-    padding: 5%;
+    background-color: var(--color-background);
+    padding: var(--spacing-large);
 }
 
-/* Ajuste de altura en móviles */
 @media (max-width: 768px) {
-    .about,
-    .service,
-    .project,
-    .testimonial,
-    .products,
-    .contact {
+    .about, .service, .project, .testimonial, .products, .contact {
         min-height: 80vh;
         padding: 50px 20px;
     }
@@ -163,6 +183,6 @@ p{
 
 /* Espaciado en secciones */
 .py-100 {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
